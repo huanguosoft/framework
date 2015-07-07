@@ -1,2 +1,8 @@
 <?php
-echo $_SERVER['REQUEST_TIME'];
+
+class Test {
+
+    public static function test() {
+        echo $_SERVER['REQUEST_TIME'];
+    }
+}
