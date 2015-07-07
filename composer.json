@@ -18,8 +18,5 @@
         "psr-4": {
             "Agile": "src/"
         }
-    },
-	"config": {
-		"preferred-install": "dist"
-	}
+    }
 }
