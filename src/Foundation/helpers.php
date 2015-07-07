@@ -1,23 +1,21 @@
 <?php
 
-if ( ! function_exists('env'))
-{
+if ( ! function_exists('env') ) {
     /**
-     * 获取一个可变环境变量的值,支持布尔值,null,empty
+     * 获取一个环境变量的值,支持布尔值,null,empty
      *
      * @param  string $key
      * @param  mixed  $default
      * @return mixed
      */
-    function env($key, $default = null)
-    {
+    function env($key, $default = null) {
         $value = getenv($key);
+        if ($value === false) return value($default);
         return $value;
     }
 }
 
-if ( ! function_exists('dump'))
-{
+if ( ! function_exists('dump') ) {
     /**
      * 浏览器友好的变量输出
      * @param mixed $var 变量
