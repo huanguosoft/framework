@@ -1,0 +1,20 @@
+{
+	"name": "agile/framework",
+	"description": "Agile PHP Framework.",
+	"keywords": ["framework", "agile"],
+	"license": "Apache-2.0",
+	"homepage": "http://www.huanguosoft.com",
+	"authors": [
+        {
+            "name" : "huanguosoft",
+            "email": "huanguosoft@gmail.com"
+        }
+    ],
+	"require": {
+		"php": ">=5.4.0",
+        "vlucas/phpdotenv": "~1.0"
+	},
+	"config": {
+		"preferred-install": "dist"
+	}
+}
