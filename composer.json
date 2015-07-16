@@ -1,19 +1,24 @@
 {
-	"name": "agile/framework",
-	"description": "Agile PHP Framework.",
-	"keywords": ["framework", "agile"],
-	"license": "Apache-2.0",
-	"homepage": "http://www.huanguosoft.com",
-	"authors": [
+    "name": "agile/framework",
+    "description": "Agile PHP Framework.",
+    "keywords": ["framework", "agile"],
+    "license": "Apache-2.0",
+    "homepage": "http://www.huanguosoft.com",
+    "authors": [
         {
             "name" : "huanguosoft",
             "email": "huanguosoft@gmail.com"
         }
     ],
-	"require": {
-		"php": ">=5.4.0",
+    "require": {
+        "php": ">=5.4.0",
+        "ext-openssl": "*",
+        "ext-mcrypt": "*",
+        "ext-mbstring": "*",
+        "doctrine/inflector": "~1.0",
+        "monolog/monolog": "~1.11",
         "vlucas/phpdotenv": "~1.0"
-	},
+    },
     "autoload": {
         "files": [
             "src/Foundation/helpers.php",
