@@ -6,10 +6,8 @@
     "homepage": "http://www.huanguosoft.com",
     "authors": [
         {
-            "name": "Andy",
-            "email": "php360@qq.com",
-            "homepage": "http://www.moqifei.com",
-            "role": "Developer"
+            "name" : "huanguosoft",
+            "email": "huanguosoft@gmail.com"
         }
     ],
     "require": {
