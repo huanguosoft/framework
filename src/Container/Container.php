@@ -3,10 +3,16 @@
 use ArrayAccess;
 
 class Container implements ArrayAccess {
+
     /**
      * @var array
      */
     protected $alias = [];
+
+    /**
+     * @var array
+     */
+    protected $binds = [];
 
     /**
      * @param $abstract
@@ -27,6 +33,13 @@ class Container implements ArrayAccess {
         unset($this->alias[$abstract]);
 
         $this->alias($abstract, $instance);
+    }
+
+    public function bind($abstract, $concrete = null) {
+        if($concrete instanceof Closure) {
+            //
+        }
+        $this->binds[$abstract] = $concrete;
     }
 
     /**

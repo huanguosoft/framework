@@ -56,7 +56,7 @@ class Application extends Container {
      * @return void
      */
     public function run() {
-        //
+        return $this;
     }
 
     /**
@@ -66,7 +66,7 @@ class Application extends Container {
      * @return string
      */
     public function version() {
-        return static::VERSION;
+        return self::VERSION;
     }
 
     /**
