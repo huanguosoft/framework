@@ -14,9 +14,6 @@
     ],
     "require": {
         "php": ">=5.4.0",
-        "ext-openssl": "*",
-        "ext-mcrypt": "*",
-        "ext-mbstring": "*",
         "doctrine/inflector": "~1.0",
         "monolog/monolog": "~1.11",
         "vlucas/phpdotenv": "~1.0"
